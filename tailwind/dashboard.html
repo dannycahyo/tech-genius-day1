@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Dashboard Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex min-h-screen">
+      <!-- Sidebar -->
+      <aside
+        class="fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-md transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:translate-x-0"
+      >
+        <div class="flex items-center justify-between p-4 md:hidden">
+          <h1 class="text-xl font-bold">Menu</h1>
+          <button class="text-gray-700 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="p-4">
+          <ul>
+            <li>
+              <a
+                href="/products"
+                class="block py-2 px-4 text-gray-700 hover:bg-gray-200 rounded"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="/orders"
+                class="block py-2 px-4 text-gray-700 hover:bg-gray-200 rounded"
+                >Orders</a
+              >
+            </li>
+            <li>
+              <a
+                href="/customers"
+                class="block py-2 px-4 text-gray-700 hover:bg-gray-200 rounded"
+                >Customers</a
+              >
+            </li>
+          </ul>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main content -->
+      <div class="flex-1 flex flex-col">
+        <header
+          class="flex items-center justify-between p-4 bg-white shadow-md md:hidden"
+        >
+          <button class="text-gray-700 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+          <h1 class="text-xl font-bold">Dashboard</h1>
+        </header>
+        <main class="flex-1 p-6">
+          <nav class="mb-4">
+            <ol class="flex space-x-2 text-gray-500">
+              <li><a href="/">Home</a></li>
+              <li>/</li>
+              <li>Products</li>
+            </ol>
+          </nav>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
