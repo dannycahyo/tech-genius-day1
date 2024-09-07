@@ -26,7 +26,6 @@ This project is part of a bootcamp lesson to teach students about HTML, CSS (usi
 
 ### Files
 
-- `index.html`: The main entry point for the dashboard layout.
 - `login.html`: The login page with form validation.
 - `login.js`: JavaScript file for form validation and DOM manipulation.
 - `tailwind.css`: Tailwind CSS file for styling.
